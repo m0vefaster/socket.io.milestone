@@ -35,14 +35,14 @@ app.post('/update', function(req,res) {
 	  if ( hostName == subDomain)
 	   {
 		   debug("Emitting:" + payload);
-		   nsp.sockets[i].emit(type,payload);
+		   nsp.sockets[i].compressData(true).emit(type,payload,"vishal");
 	   }
 	   debug("Hostname and subdomain" + hostName + " " + subDomain);
   }
  
-  res.json({
+  /*res.json({
     payload: payload
-  });
+  });*/
  
 
 });
