@@ -11,7 +11,6 @@ $(function() {
     //addChatMessage(data);
     console.log("new message is:" + data); 	  
     addSimpleMessage(data);
-    console.log("Socket flag:"+ this.nsp);
 	console.dir(this);
     this.check();
   });
