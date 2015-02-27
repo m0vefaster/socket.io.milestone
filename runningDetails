@@ -1,0 +1,13 @@
+Vishals-MBP:socket.io.milestone vishalparekh$
+Vishals-MBP:socket.io.milestone vishalparekh$ vi node_modules/socket.io/lib/socket.js
+Vishals-MBP:socket.io.milestone vishalparekh$ pwd
+/Users/vishalparekh/Git/socket.io.milestone
+
+
+
+Vishals-MacBook-Pro:lib vishalparekh$ pwd
+/Users/vishalparekh/Git/socket.io.milestone/examples1/node_modules/socket.io/lib
+Vishals-MacBook-Pro:lib vishalparekh$ ls
+client.js	index.js	namespace.js	socket.js
+Vishals-MacBook-Pro:lib vishalparekh$
+
