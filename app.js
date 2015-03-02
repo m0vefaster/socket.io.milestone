@@ -35,7 +35,8 @@ app.post('/update', function(req,res) {
 	  if ( hostName == subDomain)
 	   {
 		   debug("Emitting:" + payload);
-		   nsp.sockets[i].encode(true).emit(type,payload,"vishal");
+		   nsp.sockets[i].encode(true,type,myFunc(payload)).emit();
+           console.log("Temp:"+ nsp.sockets[i].temp);
 	   }
 	   debug("Hostname and subdomain" + hostName + " " + subDomain);
   }
@@ -46,5 +47,11 @@ app.post('/update', function(req,res) {
  
 
 });
+
+
+function myFunc(data)
+{
+  return data.replace(/\s+/g, ", ");
+}
 
 module.exports = app;

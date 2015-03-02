@@ -10,8 +10,13 @@ $(function() {
   socket.on('new message', function (data) {
     //addChatMessage(data);
     console.log("new message is:" + data); 	  
-    addSimpleMessage(data);
+    var res = data.split(",");
+    var i=0;
+    for(i=0;i<res.length ;i++)
+    {
+		addSimpleMessage(res[i]);
+	}
+	console.log("Before check:");
 	console.dir(this);
-    this.check();
   });
 });
