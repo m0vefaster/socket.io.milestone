@@ -1,7 +1,7 @@
 
 # Socket.IO Milestone
 
-This repo is for the testing of socket io issue 1946
+This repo is for the Fixing of socket io issue 1946
 
 ``https://github.com/Automattic/socket.io/issues/1946``
 
