@@ -1,35 +1,38 @@
 
-# Socket.IO Cloud
+# Socket.IO Milestone
+
+This repo is for the testing of socket io issue 1946
+https://github.com/Automattic/socket.io/issues/1946
 
 A cloud server for socket.io
 
 ## How to use
 
-```
-$ cd socket.io-cloud
-$ npm install
-$ node bin/cloud
+-Start the Client
+
 ```
 
-After the socket.io cloud server is running, set up your application to connect to it on `http://localhost:3000`.
-You can change the port from 3000 for the cloud server by supplying the `PORT` env variable.
-
-Afterwards, provide the socket.io resources to your application.
-```
-<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+Inside socket.io.milestone/examples1
+Start the client using 
+node bin/chat
 ```
 
-Then, create the socket connection by placing the following into the client-side javascript.
+-Start the Server
+
 ```
-var socket = io("http://localhost:3000/namespace.id");
+Inside socket.io.milestone/
+Start the client using 
+node bin/cloud
 ```
 
-Communications are done via `POST` requests to the socket.io cloud server.
-See socket.io-cloud-examples for a simple app example that uses the socket.io cloud.
+-Open the Browser for the page 
+``http://app1.cloud.io:3001/``
 
-Note: Cloud Server is running on port 3000 and the Client Server is running on 3001 in the examples
+-Change your hosts file to add
+
+``
+127.0.0.1       app1.cloud.io
+``
 
 
-## Features
 
-- Enables developers to create dynamic content without loading the resources for socket.io on their own servers
