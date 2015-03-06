@@ -14,7 +14,6 @@ A cloud server for socket.io
 ```
 
 Inside socket.io.milestone/examples1
-Start the client using 
 node bin/chat
 ```
 
@@ -22,7 +21,6 @@ node bin/chat
 
 ```
 Inside socket.io.milestone/
-Start the client using 
 node bin/cloud
 ```
 
