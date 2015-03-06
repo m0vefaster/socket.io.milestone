@@ -2,7 +2,8 @@
 # Socket.IO Milestone
 
 This repo is for the testing of socket io issue 1946
-https://github.com/Automattic/socket.io/issues/1946
+
+``https://github.com/Automattic/socket.io/issues/1946``
 
 A cloud server for socket.io
 
@@ -35,4 +36,6 @@ node bin/cloud
 ``
 
 
+Example
+![ScreenShot](https://raw.github.com/vish1562/socket.io.milestone/blob/master/Example.png.jpg
 
