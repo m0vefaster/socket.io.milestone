@@ -32,7 +32,6 @@ node bin/cloud
 
 ``
 127.0.0.1       app1.cloud.io
-127.0.0.1       app2.cloud.io
 ``
 
 
