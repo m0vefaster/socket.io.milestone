@@ -37,5 +37,5 @@ node bin/cloud
 
 
 Example
-![ScreenShot](https://raw.github.com/vish1562/socket.io.milestone/blob/master/Example.png.jpg
+![ScreenShot](https://github.com/vish1562/socket.io.milestone/blob/master/Example.png.jpg
 
