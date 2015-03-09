@@ -37,3 +37,26 @@ node bin/cloud
 #Example
 ![alt tag](https://github.com/vish1562/socket.io.milestone/blob/master/Example.png.jpg)
 
+##Changes Made
+
+Server - 
+1. Added three new variables in Socket object
+```
+  this.encodeFlag = false ; //If the data has to be encoded
+  this.decodeFlag = false ; //If the data has to be decoded
+  this.encodedData = [];    //The encoded data
+```
+2. Added encode function in Socket.js file
+  This will set the encode flag and the data to be encoded
+
+3. In the emit function, checking for encodeFlag and emitting the encodedData if so 
+```
+ if(this.encodeFlag )
+      {
+        packet.data = this.encodedData;
+        this.encodeFlag = false;
+      }
+  ```
+
+
+
