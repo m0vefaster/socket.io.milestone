@@ -41,16 +41,16 @@ node bin/cloud
 
 #Server 
 
-1. Added three new variables in Socket object
+- Added three new variables in Socket object
 ```
   this.encodeFlag = false ; //If the data has to be encoded
   this.decodeFlag = false ; //If the data has to be decoded
   this.encodedData = [];    //The encoded data
 ```
-2. Added encode function in Socket.js file
+- Added encode function in Socket.js file
   This will set the encode flag and the data to be encoded
 
-3. In the emit function, checking for encodeFlag and emitting the encodedData if so 
+- In the emit function, checking for encodeFlag and emitting the encodedData if so 
 ```
  if(this.encodeFlag )
       {
@@ -58,7 +58,7 @@ node bin/cloud
         this.encodeFlag = false;
       }
   ```
-4. While emitting from the server as a encoded message is done in hte following manner
+- While emitting from the server as a encoded message is done in hte following manner
 ```
 nsp.sockets[i].encode(true,type,myEncodingFunc(payload)).emit();
 ```
