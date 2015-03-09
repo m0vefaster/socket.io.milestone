@@ -37,9 +37,9 @@ node bin/cloud
 #Example
 ![alt tag](https://github.com/vish1562/socket.io.milestone/blob/master/Example.png.jpg)
 
-##Changes Made
+#Changes Made
 
-#Server 
+##Server 
 
 - Added three new variables in Socket object
 ```
@@ -74,7 +74,7 @@ function myEncodingFunc(data)/*Defined by the user*/
 }
 ```
 
-#Client
+##Client
   Now the client can define his encode/decode function
 
 ```
