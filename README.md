@@ -83,7 +83,8 @@ function myEncodingFunc(data)/*Defined by the user*/
 ```
 
 ###Client
-  Now the client can define his encode/decode function
+
+-Now the client can define his encode/decode function
 
 ```
   socket.on('new message', function (data) {
@@ -100,7 +101,14 @@ function myEncodingFunc(data)/*Defined by the user*/
       }
    }
 ```
+- The new data is simply added to the list
+```
+(function() {
+  function addSimpleMessage (data) {
 
+     $('ul').append("<li>" + data + "</li>");
+  }
+  ```
 
 
 
