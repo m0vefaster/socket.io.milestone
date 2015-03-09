@@ -1,15 +1,15 @@
 
 # Socket.IO Milestone
 
--This repo is for the Fixing of socket io issue 1946
+- This repo is for the Fixing of socket io issue 1946
 
 ``https://github.com/Automattic/socket.io/issues/1946``
 
--The fix is backward compatible.
+- The fix is backward compatible.
 
 ## How to use
 
--Start the Client
+- Start the Client
 
 ```
 
@@ -17,17 +17,17 @@ Inside socket.io.milestone/examples1
 node bin/chat
 ```
 
--Start the Server
+- Start the Server
 
 ```
 Inside socket.io.milestone/
 node bin/cloud
 ```
 
--Open the Browser for the page 
+- Open the Browser for the page 
 ``http://app1.cloud.io:3001/``
 
--Change your hosts file to add
+- Change your hosts file to add
 
 ``
 127.0.0.1       app1.cloud.io
@@ -84,7 +84,7 @@ function myEncodingFunc(data)/*Defined by the user*/
 
 ###Client
 
--Now the client can define his encode/decode function
+- Now the client can define his encode/decode function
 
 ```
   socket.on('new message', function (data) {
