@@ -39,7 +39,8 @@ node bin/cloud
 
 ##Changes Made
 
-Server - 
+#Server 
+
 1. Added three new variables in Socket object
 ```
   this.encodeFlag = false ; //If the data has to be encoded
@@ -57,6 +58,39 @@ Server -
         this.encodeFlag = false;
       }
   ```
+4. While emitting from the server as a encoded message is done in hte following manner
+```
+nsp.sockets[i].encode(true,type,myEncodingFunc(payload)).emit();
+```
+
+where the decoded function is 
+
+```
+function myEncodingFunc(data)/*Defined by the user*/
+{
+  return data.replace(/\s+/g, ", ");
+}
+```
+
+#Client
+  Now the client can define his encode/decode function
+
+```
+  socket.on('new message', function (data) {
+    myDecodeFunc(data);
+  });
+
+  function myDecodeFunc(data)
+  {
+    var res = data.split(",");
+      var i=0;
+      for(i=0;i<res.length ;i++)
+      {
+      addSimpleMessage(res[i]);
+      }
+   }
+```
+
 
 
 
