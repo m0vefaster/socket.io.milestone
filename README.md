@@ -49,6 +49,14 @@ node bin/cloud
 ```
 - Added encode function in Socket.js file
   This will set the encode flag and the data to be encoded
+```
+Socket.prototype.encode  = function(encodeFlag,type,data){
+  this.encodeFlag = encodeFlag ;
+  this.encodedData= [type,data];
+   return this;
+  };    
+```
+
 
 - In the emit function, checking for encodeFlag and emitting the encodedData if so 
 ```
