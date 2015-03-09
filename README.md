@@ -1,11 +1,11 @@
 
 # Socket.IO Milestone
 
-This repo is for the Fixing of socket io issue 1946
+-This repo is for the Fixing of socket io issue 1946
 
 ``https://github.com/Automattic/socket.io/issues/1946``
 
-A cloud server for socket.io
+-The fix is backward compatible.
 
 ## How to use
 
@@ -58,6 +58,8 @@ node bin/cloud
         this.encodeFlag = false;
       }
   ```
+  Also the encodeFlag is set to false.
+  
 - While emitting from the server as a encoded message is done in hte following manner
 ```
 nsp.sockets[i].encode(true,type,myEncodingFunc(payload)).emit();
